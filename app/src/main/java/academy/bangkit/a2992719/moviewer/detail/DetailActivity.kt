@@ -34,7 +34,7 @@ class DetailActivity : AppCompatActivity() {
     }
 
     private fun initView(movie: Movie){
-        with(binding) {
+        with(binding){
             Glide.with(root.context)
                 .load(movie.posterUrl ?: "")
                 .into(imageView)
@@ -45,15 +45,16 @@ class DetailActivity : AppCompatActivity() {
             fieldRating.text = (movie.voteAverage ?: 0).toString()
 
             var statusFavorite = movie.isFavorite
-
             setStatusFavorite(statusFavorite)
 
-            binding.fab.setOnClickListener {
+            fab.setOnClickListener {
                 statusFavorite = !statusFavorite
                 viewModel.setFavoriteMovie(movie, statusFavorite)
                 setStatusFavorite(statusFavorite)
             }
+
         }
+
     }
 
     private fun setStatusFavorite(statusFavorite: Boolean) {
