@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="img_item_width">64dp</dimen>
+    <dimen name="img_item_height">96dp</dimen>
+
+    <dimen name="img_detail_width">160dp</dimen>
+    <dimen name="img_detail_height">240dp</dimen>
+
+    <dimen name="dimen05x">4dp</dimen>
+    <dimen name="dimen1x">8dp</dimen>
+    <dimen name="dimen2x">16dp</dimen>
+    <dimen name="dimen3x">24dp</dimen>
+    <dimen name="dimen7x">56dp</dimen>
+
+    <dimen name="text05x">12sp</dimen>
+    <dimen name="text1x">14sp</dimen>
+    <dimen name="text2x">16sp</dimen>
+    <dimen name="text3x">20sp</dimen>
+    <dimen name="text6x">48sp</dimen>
+    <dimen name="icon_splash">250dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="img_large">256dp</dimen>
+</resources>

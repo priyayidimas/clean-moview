@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="h2" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text2x</item>
+        <item name="android:layout_marginBottom">@dimen/dimen2x</item>
+    </style>
+
+    <style name="h3" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text1x</item>
+        <item name="android:layout_marginBottom">@dimen/dimen2x</item>
+    </style>
+
+    <style name="h4" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text05x</item>
+        <item name="android:layout_marginBottom">@dimen/dimen2x</item>
+    </style>
+</resources>

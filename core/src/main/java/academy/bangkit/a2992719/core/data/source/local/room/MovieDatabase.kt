@@ -1,0 +1,12 @@
+package academy.bangkit.a2992719.core.data.source.local.room
+
+import academy.bangkit.a2992719.core.data.source.local.entity.MovieEntity
+import androidx.room.Database
+import androidx.room.RoomDatabase
+
+@Database(entities = [MovieEntity::class], version = 1, exportSchema = false)
+abstract class MovieDatabase : RoomDatabase() {
+
+    abstract fun movieDao() : MovieDao
+
+}

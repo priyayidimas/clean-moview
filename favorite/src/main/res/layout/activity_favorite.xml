@@ -8,7 +8,7 @@
     android:orientation="vertical">
 
     <ir.alirezabdn.wp7progress.WP10ProgressBar
-        android:id="@+id/wp7progressbar"
+        android:id="@+id/progressbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -22,7 +22,7 @@
         android:layout_marginEnd="10dp" />
 
     <LinearLayout
-        android:id="@+id/view_empty"
+        android:id="@+id/empty"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -50,7 +50,7 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_items"
+        android:id="@+id/rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/item_data"
