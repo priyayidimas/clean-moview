@@ -46,5 +46,4 @@ dependencies {
     implementation project(":core")
     api "com.google.dagger:dagger:$daggerVersion"
     api "com.google.dagger:dagger-android:$daggerVersion"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinStdlibVersion"
 }
