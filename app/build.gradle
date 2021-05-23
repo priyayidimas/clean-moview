@@ -15,6 +15,11 @@ android {
         viewBinding true
     }
 
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
     defaultConfig {
         applicationId "academy.bangkit.a2992719.moviewer"
         minSdkVersion 21

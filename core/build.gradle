@@ -13,6 +13,11 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
     buildFeatures {
         viewBinding true
     }
