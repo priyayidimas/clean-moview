@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.movies.observe(this){ movies ->
             if(movies != null){
                 when(movies){
-                    is Resource.Loading -> showProgressBar()
+                    is Resource.Loading -> showProgress()
                     is Resource.Success -> {
                         listAdapter = ListAdapter(movies.data!!){ moveToDetail(it) }
                         showData()
@@ -51,9 +51,9 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun showProgressBar(){
+    private fun showProgress(){
         with(binding){
-            wp7progressbar.showProgressBar()
+            loading.visibility = View.VISIBLE
             viewEmpty.visibility = View.GONE
             rvItems.visibility = View.GONE
         }
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showData(){
         with(binding){
-            wp7progressbar.hideProgressBar()
+            loading.visibility = View.GONE
             viewEmpty.visibility = View.GONE
             rvItems.apply {
                 visibility = View.VISIBLE
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun viewEmpty(){
         with(binding){
-            wp7progressbar.hideProgressBar()
+            loading.visibility = View.GONE
             viewEmpty.visibility = View.VISIBLE
             rvItems.visibility = View.GONE
         }

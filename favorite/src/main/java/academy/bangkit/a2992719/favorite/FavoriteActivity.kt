@@ -65,7 +65,6 @@ class FavoriteActivity : AppCompatActivity() {
 
     private fun showData(){
         with(binding){
-            progressbar.hideProgressBar()
             empty.visibility = View.GONE
             rv.apply {
                 visibility = View.VISIBLE
@@ -78,7 +77,6 @@ class FavoriteActivity : AppCompatActivity() {
 
     private fun viewEmpty(){
         with(binding){
-            progressbar.hideProgressBar()
             empty.visibility = View.VISIBLE
             rv.visibility = View.GONE
         }

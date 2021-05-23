@@ -2,6 +2,7 @@
     <string name="app_name">Moviewer</string>
     <string name="title_favorite">Favorite</string>
     <string name="no_results_found_error">No Results Found</string>
+    <string name="loading">Loading …</string>
 
     <string name="field_desc_title">Title</string>
     <string name="field_desc_genre">Genre</string>
